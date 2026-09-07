@@ -339,18 +339,34 @@ img{max-width:100%;display:block}
   *{transition:none !important}
 }
 /*ADDITION CODE FOR AN ANIMATION IN MOBILE TO FITT */
-@media (max-width: 400px) {
+
+@media (max-width: 600px) {
+
   .hero-scene {
-    width: 60%;
-    max-width: 60vw;
+    width: 100%;
+    height: 620px;
+    max-width: 100vw;
     overflow: hidden;
     position: relative;
   }
 
   .stage {
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.65);
-    transform-origin: top center;
+    position: absolute;
+    width: 125%;
+    left: 50%;
+    margin-left: 0;
+
+    /* Keep the complete scene centered */
+    transform: translateX(-50%) scale(0.58);
+    transform-origin: center center;
+
+    /* Faster movement */
+    animation-duration: 1.5s !important;
+  }
+
+  /* Make all moving elements faster */
+  .stage *,
+  .hero-scene * {
+    animation-duration: 1.5s !important;
   }
 }
