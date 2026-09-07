@@ -341,8 +341,8 @@ img{max-width:100%;display:block}
 /*ADDITION CODE FOR AN ANIMATION IN MOBILE TO FITT */
 @media (max-width: 400px) {
   .hero-scene {
-    width: 100%;
-    max-width: 100vw;
+    width: 60%;
+    max-width: 60vw;
     overflow: hidden;
     position: relative;
   }
