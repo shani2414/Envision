@@ -338,3 +338,17 @@ img{max-width:100%;display:block}
   .stage{animation:none}
   *{transition:none !important}
 }
+/*ADDITION CODE FOR AN ANIMATION IN MOBILE TO FITT */
+@media (max-width: 600px) {
+  .hero-scene {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .stage {
+    transform: scale(0.65);
+    transform-origin: center center;
+    width: 150%;
+    margin-left: -25%;
+  }
+}
